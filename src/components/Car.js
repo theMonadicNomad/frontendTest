@@ -1,5 +1,9 @@
 import { Block, Button, Link, Text } from 'vcc-ui';
 function Car({ car }) {
+
+    const learnUrl = `/learn/${car.id}`;
+    const shopUrl = `/shop/${car.id}`;
+
     return (
         <div style={{ margin: '10px' }}>
             <Text variant="hillary" as="h3" style={{ color: 'grey', textTransform: 'uppercase', }}> {car.bodyType}</Text>
@@ -13,8 +17,8 @@ function Car({ car }) {
         <Link href={car.shopUrl} arrow="right">SHOP </Link>
       </div> */}
             <div style={{ marginTop: '10px', textAlign: 'center', color: 'blue' }}>
-                <Link href={car.learnUrl} style={{ marginRight: '15px', display: 'inline-block' }} arrow="right">LEARN </Link>
-                <Link href={car.shopUrl} style={{ display: 'inline-block' }} arrow="right">SHOP </Link>
+                <Link href={learnUrl} style={{ marginRight: '15px', display: 'inline-block' }} arrow="right">LEARN </Link>
+                <Link href={shopUrl} style={{ display: 'inline-block' }} arrow="right">SHOP </Link>
             </div>
             <style jsx>{`
         @media (max-width: 600px) {
