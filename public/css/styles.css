@@ -2,3 +2,130 @@ body {
   background: white;
   color: black;
 }
+
+
+.link-container {
+  margin-top: 10px;
+  text-align: center;
+  color: blue;
+  display: flex;
+  justify-content: center;
+}
+
+/* CarStyles.css */
+
+.car-container {
+  margin: 10px;
+}
+
+.car-bodyType {
+  color: grey;
+  text-transform: uppercase;
+}
+
+.model-info {
+  display: flex;
+  align-items: baseline;
+}
+
+.model-name {
+  font-weight: bold;
+}
+
+.model-type {
+  color: grey;
+  margin-left: 10px;
+}
+
+.car-image {
+  width: 350px;
+  height: auto;
+  margin-top: 20px;
+}
+
+/* Adjustments for mobile view */
+@media (max-width: 600px) {
+  .model-info {
+      flex-direction: column;
+  }
+
+  .model-info .model-type {
+      margin-left: 0 !important;
+  }
+}
+
+
+.filter-bar-container {
+  max-width: 200px;
+  margin: auto;
+}
+
+.filter-select-input {
+  width: 100%;
+  font-size: 14px;
+  height: 30px;
+  padding: 0 5px;
+}
+
+.scroll-container {
+  display: flex;
+  overflow-x: scroll;
+  scrollbar-width: none; /* For Firefox */
+  -ms-overflow-style: none; /* For Internet Explorer and Edge */
+}
+
+/* For Chrome, Safari, and Opera, you might need additional global styles or use ::-webkit-scrollbar within this file */
+.scroll-container::-webkit-scrollbar {
+  display: none;
+}
+
+
+.chevron-buttons {
+  position: absolute;
+  right: 10px;
+  display: flex;
+  padding: 10px;
+}
+
+.chevron-buttons a {
+  padding: 5px;
+  width: 32px;
+  height: 32px;
+  display: block;
+}
+
+.navigation-dots {
+  text-align: center;
+  padding: 10px 0;
+}
+
+.navigation-dot {
+  height: 10px;
+  width: 10px;
+  margin: 0 5px;
+  background-color: lightgray; /* Default background color */
+  display: inline-block;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.navigation-dot.active {
+  background-color: black; /* Active dot color */
+}
+
+
+
+
+
+
+@media (max-width: 599px) {
+  .chevron-buttons {
+    display: none;
+  }
+}
+
+@media (min-width: 600px) {
+  .navigation-dots {
+      display: none;
+  }
+}

@@ -2,6 +2,7 @@ import { HelloWorld } from "../src/components/HelloWorld";
 import "../public/css/styles.css";
 import React from "react";
 import { StyleProvider, ThemePicker } from 'vcc-ui';
+import CarsList from "../src/components/CarsList";
 
 
 function HomePage() {
@@ -9,7 +10,7 @@ function HomePage() {
     <React.StrictMode>
        <StyleProvider>
     <ThemePicker variant="light">
-      <HelloWorld />
+      <CarsList />
       </ThemePicker>
       </StyleProvider>
     </React.StrictMode>
