@@ -2,7 +2,6 @@ import cars from '../../public/api/cars.json';
 import React, { useRef, useState, useEffect } from 'react';
 import { Block,  SelectInput } from 'vcc-ui';
 import Car from './Car';
-//import "./style.css";
 
 
 function CarsList() {
